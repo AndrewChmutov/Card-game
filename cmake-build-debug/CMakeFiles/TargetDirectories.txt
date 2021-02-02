@@ -1,0 +1,3 @@
+D:/Prog/c++/Cards/cmake-build-debug/CMakeFiles/Cards.dir
+D:/Prog/c++/Cards/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Prog/c++/Cards/cmake-build-debug/CMakeFiles/rebuild_cache.dir
