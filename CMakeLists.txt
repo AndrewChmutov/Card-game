@@ -3,4 +3,4 @@ project(Cards)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Cards main.cpp Card.cpp Card.h)
+add_executable(Cards main.cpp Card.cpp Card.h global.h)
