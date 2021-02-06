@@ -22,7 +22,7 @@ private:
     void distribution();
 
 
-    void ring(int fPl)
+    void ring(int fPl);
 
 public:
     Table();

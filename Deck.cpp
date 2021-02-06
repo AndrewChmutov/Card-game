@@ -43,7 +43,7 @@
 
         for(int i = 0; i < g_dsize; i++){
             if (k == dc[i].getMast()){
-                dc[i].setK();
+
             }
         }
 
@@ -61,5 +61,3 @@
 
         return temp;
     }
-
-};

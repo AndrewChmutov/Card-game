@@ -3,7 +3,8 @@
 //
 
 #include "Table.h"
-
+#include <iostream>
+#include "global.h"
 
     void Table::distribution()
     {
@@ -26,7 +27,7 @@
             }
 
             std::vector<Card> temp_attack;
-            us[i]->getAttack(NULL,)
+            us[i]->getAttack(attack, temp_attack);
             for (int j = i;; j++) {
 
                 if ((j == i) && (j != 0)) {
@@ -49,7 +50,7 @@
     void Table::addUser(User* u1)
     {
         if(us.size() < 4){
-            cout << "Too much players" << endl;
+            std::cout << "Too much players" << std::endl;
             return;
         }
         us.insert(us.end(), u1);
@@ -58,21 +59,21 @@
     void Table::play()
     {
             if (us.empty()) {
-                cout << "There is no players!";
+                std::cout << "There is no players!";
             }
             if (us.size() == 1) {
-                cout << "Not enough players!";
+                std::cout << "Not enough players!";
             }
 
 
-            d.Shuffle(k);
+            d.Shuffle();
 //
             int firstPl = rand() % us.size();
 
-            ring(firsrPl);
+            ring(firstPl);
 
 
-            b = false;
+            bool b = false;
         }
 
 
