@@ -7,6 +7,7 @@ protected:
     Mast c_m;
     Number c_n;
 
+    Card* c_ptr;
 public:
 
     Card();
@@ -26,6 +27,9 @@ public:
 
     bool compare(const Card& other, const Mast& k);
 
+    void choosePoint(Card* other);
+
+    bool isFree();
 };
 
 

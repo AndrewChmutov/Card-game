@@ -9,10 +9,7 @@
 
 class Human : public Player{
 public:
-    Human()
-    {
-        nr.resize(g_rsize);
-    }
+    Human();
 /*
 
     void getCardFromPlayer(vector<Card>& attack)
@@ -88,7 +85,7 @@ public:
 
     }
 
-    void getDefence(const std::vector<Card>& att, std::vector<Card>& def) override
+    void getDefence(const std::vector<Card>& att, std::vector<Card>& def, const Mast& k) override
     {
 
     }

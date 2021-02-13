@@ -55,3 +55,13 @@
             }
         }
     }
+
+    void Card::choosePoint(Card* other)
+    {
+        c_ptr = other;
+    }
+
+    bool Card::isFree()
+    {
+        return c_ptr != nullptr;
+    }

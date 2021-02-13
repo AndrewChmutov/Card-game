@@ -3,3 +3,9 @@
 //
 
 #include "Human.h"
+#include "global.h"
+
+Human::Human()
+{
+    nr.resize((g_rsize));
+}

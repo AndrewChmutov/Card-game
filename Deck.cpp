@@ -13,7 +13,7 @@
 
             for(int j = 0; j < 9; j++){
                 dc[i * 9 + j].setMast(static_cast<Mast>(i));
-                dc[i * 9 + j].setNumber(static_cast<Number>(j));
+                dc[i * 9 + j].setNumber(static_cast<Number>(j + 6));
             }
         }
     }

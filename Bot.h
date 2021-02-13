@@ -1,4 +1,4 @@
-//
+//w
 // Created by uzer on 02.02.2021.
 //
 
@@ -9,12 +9,16 @@
 #include "Table.h"
 
 class Bot : public Player{
+private:
+//    void sortCardsRise(std::vector<Card>& v, const Mast& k);
+//    void sortCardsFall(std::vector<Card>& v, const Mast& k);
+
 public:
     Bot();
 
     void getAttack(const std::vector<Card>& c_att, std::vector<Card>& att) override;
 
-    void getDefence(const std::vector<Card>& att, std::vector<Card>& def) override;
+    void getDefence(const std::vector<Card>& att, std::vector<Card>& def, const Mast& k) override;
 
 
 

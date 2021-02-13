@@ -18,28 +18,7 @@
     }
 
 
-    void Table::ring(int fPl){
-        bool b = true;
 
-        for (int i = fPl; b; i++) {
-            if (i == us.size()) {
-                i = 0;
-            }
-
-            std::vector<Card> temp_attack;
-            us[i]->getAttack(attack, temp_attack);
-            for (int j = i;; j++) {
-
-                if ((j == i) && (j != 0)) {
-                    break;
-                }
-
-                if (j == us.size()) {
-                    j = 0;
-                }
-            }
-        }
-    }
 
     Table::Table()
     {
