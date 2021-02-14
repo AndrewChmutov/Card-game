@@ -24,6 +24,7 @@
     {
         attack.resize(6);
         defend.resize(6);
+        k = TREF;
     }
 
     void Table::addUser(User* u1)
@@ -48,8 +49,6 @@
             d.Shuffle();
 //
             int firstPl = rand() % us.size();
-
-            ring(firstPl);
 
 
             bool b = false;

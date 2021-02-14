@@ -7,17 +7,19 @@
 Bot::Bot()
 {
     nr.resize(g_rsize);
+    nr.resize(0);
 }
 
 void Bot::getAttack(const std::vector<Card>& c_att, std::vector<Card>& att)
 {
-    att[0] = nr[0];
+    Card temp = nr[0];
 
     for(auto i = nr.begin() + 1; i < nr.end(); i++){
-        if( (*i).getNumber() < att[0].getNumber() ){
-            att[0] = (*i);
+        if( (*i).getNumber() < temp.getNumber() ){
+            temp = (*i);
         }
     }
+    att.push_back(temp);
 }
 
 void Bot::getDefence(const std::vector<Card>& att, std::vector<Card>& def, const Mast& k)
@@ -25,6 +27,7 @@ void Bot::getDefence(const std::vector<Card>& att, std::vector<Card>& def, const
 
     //Если по итогу в массиве индексов будет -1, то отбится невозможно
     std::vector<int> index(att.size(), -1);
+
 
 
     //В каждой итерации выбираем карточку для обороны
@@ -36,7 +39,7 @@ void Bot::getDefence(const std::vector<Card>& att, std::vector<Card>& def, const
         for(int j = 0; j < nr.size(); j++)
         {
             //Сравниваем карты
-            if ((nr[j].compare(att[i], k)) && (nr[j].compare(nr[index[i]], k)))
+            if ((nr[j].compare(att[i], k)) && (!nr[j].compare(nr[index[i]], k)))
             {
                 //Смотрим, чтобы карты защиты не повторялись
                 bool b = true;
@@ -82,6 +85,7 @@ void Bot::getDefence(const std::vector<Card>& att, std::vector<Card>& def, const
     }
 
     nr = nw_nr;
+
 
 }
 

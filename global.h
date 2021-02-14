@@ -12,9 +12,9 @@ const int g_rsize = 6;
 //создаю тип и номер для карточек
 enum Mast{
     TREF,
-    Chervu,
-    Bubna,
-    Pika
+    CHERVU,
+    BUBNA,
+    PIKA
 };
 enum Number{
     SIX = 6,
