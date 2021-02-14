@@ -1,3 +1,0 @@
-"D:\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Cards.dir/objects.a
-D:\PROGRA~1\gcc\bin\ar.exe cr CMakeFiles\Cards.dir/objects.a @CMakeFiles\Cards.dir\objects1.rsp
-D:\PROGRA~1\gcc\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Cards.dir/objects.a -Wl,--no-whole-archive  -o Cards.exe -Wl,--out-implib,libCards.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Cards.dir\linklibs.rsp
